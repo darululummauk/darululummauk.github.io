@@ -22,6 +22,16 @@ body {
 .nama span {
   font-size: 20px;
 }
+@media (max-width: 400px) {
+  .nama {
+    display: block;
+    position: absolute;
+    top: 60%;
+    left: calc(73% - 80px);
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+}
 @media (min-width: 951px) {
   .nama {
     display: none;
