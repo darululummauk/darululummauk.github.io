@@ -509,6 +509,7 @@ section.why-us {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: -50px;
 }
 
 #tabs ul::after {
