@@ -511,7 +511,6 @@ section.why-us {
   flex-wrap: wrap;
   margin-bottom: -50px;
 }
-
 #tabs ul::after {
   clear: both;
   content: "";
@@ -623,6 +622,10 @@ section.coming-soon {
   background-color: #172238;
   padding: 120px 0px;
   position: relative;
+}
+#link-daftar {
+  position: relative;
+  z-index: 200;
 }
 section.coming-soon::after {
   content: "";
