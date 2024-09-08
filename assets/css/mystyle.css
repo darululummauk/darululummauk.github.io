@@ -41,12 +41,12 @@ body {
     font-size: 25px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1250px) {
   .nama {
     display: block;
     position: absolute;
     top: 60%;
-    left: calc(21% - 80px);
+    left: calc(25% - 80px);
     transform: translate(-50%, -50%);
     width: 100%;
   }
