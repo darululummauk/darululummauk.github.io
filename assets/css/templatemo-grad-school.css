@@ -508,6 +508,7 @@ section.why-us {
   padding: 0;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 #tabs ul::after {
@@ -521,7 +522,7 @@ section.why-us {
   font-size: 1.2em;
   letter-spacing: 1px;
   text-align: center;
-  margin: 0.5em;
+  margin: 0;
 }
 #tabs ul li a {
   display: block;
