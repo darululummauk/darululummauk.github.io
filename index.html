@@ -8,11 +8,21 @@
     />
     <meta name="description" content="" />
     <meta name="author" content="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gulzar&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900"
       rel="stylesheet"
     />
-    <link rel="icon" href="assets/images/logo DU.png" />
+    <link
+      style="border-radius: 50%"
+      rel="icon"
+      href="assets/images/logoDU.jpeg"
+    />
     <title>Darul Ulum II</title>
 
     <!-- Bootstrap core CSS -->
@@ -39,20 +49,31 @@ https://templatemo.com/tm-557-grad-school
 
   <body>
     <!--header-->
-    <header class="main-header clearfix" role="header">
+    <header class="main-header clearfix" role="header" id="navhed">
       <div class="logo">
         <a href="#"
-          ><img src="assets/images/logo DU.png" width="50" alt="logo"
+          ><img
+            src="assets/images/logoDU.jpeg"
+            style="border-radius: 50%"
+            width="50"
+            alt="logo"
         /></a>
+      </div>
+      <div class="nama">
+        <h2 align="center" style="font-family: 'Gulzar'; color: aliceblue">
+          معهد الاسلامي السلفي <span style="color: #f5a425">دار العلوم </span>
+        </h2>
       </div>
       <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
       <nav id="menu" class="main-nav" role="navigation">
         <ul class="main-menu">
-          <li><a href="" id="totop">Beranda</a></li>
-          <li class="has-submenu">
-            <a href="#section2">Tentang Kami</a>
+          <li><a href="#top" id="firstli">Beranda</a></li>
+          <li>
+            <a href="#section2" id="secondli">Tentang Kami</a>
           </li>
           <li><a href="#section4">Jenjang</a></li>
+          <li><a href="#section3">Pendaftaran</a></li>
+          <li><a href="#gallery">Gallery</a></li>
           <!-- <li><a href="#section5">Video</a></li> -->
           <li><a href="#section6" id="hub">Hubungi Kami</a></li>
         </ul>
@@ -89,14 +110,9 @@ https://templatemo.com/tm-557-grad-school
                   <h4><i class="bi bi-houses-fill"></i>Profil</h4>
                 </div>
                 <div class="content-hide">
-                  Pondok pesantren (Ponpes) Darul Ulum II adalah lembaga
-                  pendidikan islam yang didirikan oleh KH. Ahmad Hidayatullah &
-                  Hj. Iyatul Adawiyah pada tanggal 03 September 2003. Secara
-                  harfiah Darul Ulum sendiri memiliki arti Rumah bagi banyak
-                  ilmu. Nama ini dipilih sebagai harapan bahwa Darul Ulum
-                  menjadi kawah candradimuka bagi para cendikiawan muslim dan
-                  santri yang lulus menjadi pribadi yang berkarakter Muttaqin,
-                  imamal Muttaqin, Ulamaul Amilin.
+                  pondok Pesantren Darul Ulum Mauk mempunyai tiga peranan
+                  penting, yaitu: sebagai lembaga pendidikan Islam, pengembangan
+                  sumber daya manusia, dan pengembangan masyarakat.
                   <div class="scroll-to-section">
                     <a href="#section2">More Info.</a>
                   </div>
@@ -114,14 +130,12 @@ https://templatemo.com/tm-557-grad-school
                 </div>
                 <div class="content-hide">
                   <p>
-                    Curabitur id eros vehicula, tincidunt libero eu, lobortis
-                    mi. In mollis eros a posuere imperdiet. Donec maximus
-                    elementum ex. Cras convallis ex rhoncus, laoreet libero eu,
-                    vehicula libero.
-                  </p>
-                  <p class="hidden-sm">
-                    Curabitur id eros vehicula, tincidunt libero eu, lobortis
-                    mi. In mollis eros a posuere imperdiet.
+                    Pondok Pesantren Darul Ulum hingga saat ini telah membuka
+                    beberapa cabang pendidikan yaitu: 1. Raudhatul Athfal (RA);
+                    2. Madrasah Ibtidaiyah (MI); 3. Madrasah Tsanwiyah (MTs); 4.
+                    Sekolah Menengah Kejuruan (SMK); 5. Tahfidzul Qur’an dan
+                    Tahsin; 6. Takhosus Pesantren 7. Program pesantren untuk
+                    anak umur tingkat dasar (shibyan)
                   </p>
                   <div class="scroll-to-section">
                     <a href="#section3">Details</a>
@@ -138,15 +152,11 @@ https://templatemo.com/tm-557-grad-school
                 </div>
                 <div class="content-hide">
                   <p>
-                    Curabitur id eros vehicula, tincidunt libero eu, lobortis
-                    mi. In mollis eros a posuere imperdiet. Donec maximus
-                    elementum ex. Cras convallis ex rhoncus, laoreet libero eu,
-                    vehicula libero.
+                    Jadilah bagian dari kami, bersama membentuk generasi unggul
+                    yang siap menghadapi masa depan dengan keimanan yang kuat
+                    dan pengetahuan yang luas.
                   </p>
-                  <p class="hidden-sm">
-                    Curabitur id eros vehicula, tincidunt libero eu, lobortis
-                    mi. In mollis eros a posuere imperdiet.
-                  </p>
+
                   <div class="scroll-to-section">
                     <a href="#section4">Read More</a>
                   </div>
@@ -169,44 +179,43 @@ https://templatemo.com/tm-557-grad-school
           <div class="col-md-12">
             <div id="tabs">
               <ul>
-                <li><a href="#tabs-1">Selayang Pandang</a></li>
-                <li><a href="#tabs-2">Visi & Misi</a></li>
-                <li><a href="#tabs-3">Program Pesantren</a></li>
-                <li><a href="#tabs-4">Fasilitas</a></li>
-                <li><a href="#tabs-5">Ekstrakulikuler</a></li>
+                <li class="dot-tabs"><a href="#tabs-1"></a></li>
+                <li class="dot-tabs"><a href="#tabs-2"></a></li>
+                <li class="dot-tabs"><a href="#tabs-3"></a></li>
+                <li class="dot-tabs"><a href="#tabs-4"></a></li>
+                <li class="dot-tabs"><a href="#tabs-5"></a></li>
+                <li class="dot-tabs"><a href="#tabs-6"></a></li>
               </ul>
               <section class="tabs-content">
                 <article id="tabs-1">
                   <div class="row">
                     <div class="col-md-6">
-                      <img src="assets/images/choose-us-image-01.png" alt="" />
-                    </div>
-                    <div class="col-md-6">
                       <h4>Selayang Pandang</h4>
                       <p>
-                        Pondok Pesantren Darul Ulum Mauk adalah sebuah Yayasan
-                        Pendidikan Islam yang didirikan pada tanggal 03
-                        September 2003 di Kampung Kebon Kelapa – Kel. Ketapang –
-                        Kec. Mauk – Kab. Tangerang – Provinsi Jawa Barat.
-                        Lembaga pendidikan ini terletak di atas tanah seluas
-                        kurang lebih 8.000 meter dengan jumlah santri yang
-                        sedang menyenyam pendidikan sekitar 200 orang. Dengan
-                        usia yang baru menginjak 21 tahun, Ponpes Darul Ulum II
-                        telah meluluskan banyak santri yang kemudian tersebar di
-                        pulau Jawa dan Sumatera. Hal ini sejalan dengan visi
-                        pondok pesantren Miftahul Huda untuk terus berupaya
-                        menjadi pusat pendidikan islam yang unggul secara
-                        Nasional dalam rangka penghayatan atas keesaan Alloh
-                        SWT.
+                        Pondok pesantren (Ponpes) Darul Ulum II adalah lembaga
+                        pendidikan islam yang didirikan oleh KH. Ahmad
+                        Hidayatullah & Hj. Iyatul Adawiyah pada tanggal 03
+                        September 2003. Lembaga pendidikan ini terletak di atas
+                        tanah seluas kurang lebih 8.000 meter bertempat di
+                        Kampung Kebon Kelapa – Kel. Ketapang – Kec. Mauk – Kab.
+                        Tangerang – Provinsi Jawa Barat. Nama ini dipilih
+                        sebagai harapan bahwa Darul Ulum menjadi kawah
+                        candradimuka bagi para cendikiawan muslim dengan harapan
+                        lulusannya menjadi pribadi yang berkarakter Muttaqin,
+                        imamal Muttaqin, Ulamaul Amilin.
                       </p>
+                    </div>
+                    <div class="col-md-6">
+                      <img
+                        src="assets/images/pandang.jpg"
+                        height="400"
+                        alt=""
+                      />
                     </div>
                   </div>
                 </article>
                 <article id="tabs-2">
                   <div class="row">
-                    <div class="col-md-6">
-                      <img src="assets/images/choose-us-image-02.png" alt="" />
-                    </div>
                     <div class="col-md-6" style="text-align: left">
                       <h4 class="vimi">Visi & Misi</h4>
                       <p id="vision">
@@ -237,13 +246,17 @@ https://templatemo.com/tm-557-grad-school
                         </span>
                       </p>
                     </div>
+                    <div class="col-md-6">
+                      <img
+                        src="assets/images/visimisi.jpg"
+                        height="400"
+                        alt=""
+                      />
+                    </div>
                   </div>
                 </article>
                 <article id="tabs-3">
                   <div class="row">
-                    <div class="col-md-6">
-                      <img src="assets/images/choose-us-image-03.png" alt="" />
-                    </div>
                     <div class="col-md-6">
                       <h4>Program Pesantren</h4>
                       <p>Beberapa Program Yang Kami Terapkan :</p>
@@ -257,13 +270,17 @@ https://templatemo.com/tm-557-grad-school
                         <li>Kajian Kitab Kuning</li>
                       </ul>
                     </div>
+                    <div class="col-md-6">
+                      <img
+                        src="assets/images/program.jpg"
+                        height="400"
+                        alt=""
+                      />
+                    </div>
                   </div>
                 </article>
                 <article id="tabs-4">
                   <div class="row">
-                    <div class="col-md-6">
-                      <img src="assets/images/choose-us-image-03.png" alt="" />
-                    </div>
                     <div class="col-md-6">
                       <h4>Fasilitas</h4>
                       <p>Menyediakan fasilitas berupa :</p>
@@ -280,13 +297,17 @@ https://templatemo.com/tm-557-grad-school
                         <li>WC Siswa / I</li>
                       </ul>
                     </div>
+                    <div class="col-md-6">
+                      <img
+                        src="assets/images/fasilitas.jpeg"
+                        height="400"
+                        alt=""
+                      />
+                    </div>
                   </div>
                 </article>
                 <article id="tabs-5">
                   <div class="row">
-                    <div class="col-md-6">
-                      <img src="assets/images/choose-us-image-03.png" alt="" />
-                    </div>
                     <div class="col-md-6">
                       <h4>Extrakulikuler</h4>
                       <p>Turut menjalankan beberapa extrakulikuer seperti :</p>
@@ -305,6 +326,35 @@ https://templatemo.com/tm-557-grad-school
                         <li>Peternakan</li>
                         <li>Olahraga</li>
                       </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <img src="assets/images/exkul.jpeg" height="400" alt="" />
+                    </div>
+                  </div>
+                </article>
+                <article id="tabs-6">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <h4>Jalur Beasiswa</h4>
+                      <p>
+                        Selain jalur reguler, kami juga menyediakan program
+                        beasiswa bagi para satri yang memeliki kriteria sebagai
+                        berikut :
+                        <br />
+                        <br />
+                        - Hafidzh & Hafidzoh -
+                        <br />
+                        - Prestasi (Akademik / Non-akademik) -
+                        <br />
+                        - Yatim Piatu, Fuqoro atau Dhuafa -
+                      </p>
+                    </div>
+                    <div class="col-md-6">
+                      <img
+                        src="assets/images/beasiswa.jpeg"
+                        height="400"
+                        alt=""
+                      />
                     </div>
                   </div>
                 </article>
@@ -420,7 +470,9 @@ https://templatemo.com/tm-557-grad-school
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h1 class="mb-5">Informasi Pendaftaran</h1>
+            <div class="section-heading">
+              <h2>Informasi Pendaftaran</h2>
+            </div>
             <p>
               Pendaftaran bisa dilakukan secara offline dengan mengunjungi
               Sekretariat Pondok Pesantren Kami, ataupun online melalui link
@@ -444,55 +496,51 @@ https://templatemo.com/tm-557-grad-school
               </li>
               <li class="list-group-item">
                 <span>3.</span>
-                <p>FC raport Kelas 4-5 Bagi Pendaftar MTs</p>
-              </li>
-              <li class="list-group-item">
-                <span>4.</span>
                 <p>FC Kartu Ujian Nasional Kecuali Bagi Pendaftar RA</p>
               </li>
               <li class="list-group-item">
-                <span>5.</span>
+                <span>4.</span>
                 <p>
                   FC Kartu Keluarga, KTP Orang Tua (Ayah & Ibu) dan Akta
                   Kelahiran
                 </p>
               </li>
               <li class="list-group-item">
+                <span>5.</span>
+                <p>
+                  Pas Foto Background Merah 2x3, 3x4 dan 4x6 (Masing-Masing 3
+                  Lembar) (Putri Wajib Berhijab)
+                </p>
+              </li>
+              <li class="list-group-item">
                 <span>6.</span>
                 <p>
-                  Pas Foto Background Merah 2x3 dan 3x4 (Masing-Masing 4 Lembar)
-                  (Putri Wajib Berhijab)
+                  Bagi Pendaftar Pindahan Harus Menyerahkan Raport Sekolah Asli
+                  Sebelumnya, Surat Keterangan Pindah, Surat Keterangan Kelakuan
+                  Baik, Surat Mutasi dari Emis atau Dapodik, Serta Menginfakan 1
+                  buah Al-qur'an dan 1 buah Buku Bacaan
                 </p>
               </li>
               <li class="list-group-item">
                 <span>7.</span>
                 <p>
-                  Bagi Siswa/I Pindahan Wajib Menyerahkan Raport Sekolah Asli
-                  Sebelumnya, Surat Keterangan Pindah, Surat Keterangan Kelakuan
-                  Baik, Surat Mutasi dari Emis atau Dapodik, Serta Mnginfakan 1
-                  buah Al-qur'an dan 1 buah Buku Bacaan
-                </p>
-              </li>
-              <li class="list-group-item">
-                <span>8.</span>
-                <p>
-                  Membayar Iuran Pendaftaran Sebesar Rp. 200.000,- Kebagian
+                  Membayar Iuran Pendaftaran Sebesar Rp. 200.000,- Ke bagian
                   Keuangan
                 </p>
               </li>
               <li class="list-group-item">
-                <span>9.</span>
+                <span>8.</span>
                 <p>
                   Bagi Pendaftar Online Berkas-Berkas Diatas Harap Discan
                   Terlebih Dahulu
                 </p>
               </li>
               <li class="list-group-item">
-                <span>10.</span>
+                <span>9.</span>
                 <p>
                   Setelah Melakukan Pendaftaran Diharapkan Untuk Hadir
-                  Dipesantren Bersama Wali Santri Untuk Melaksanakan Tes Masuk,
-                  Wali Santri Tidak Diperkenankan Mendampingi Dalam Ruang Tes
+                  Dipesantren Bersama Wali Santri Untuk Ijab Qobul dan
+                  Melaksanakan Tes Masuk.
                 </p>
               </li>
             </ol>
@@ -544,17 +592,67 @@ https://templatemo.com/tm-557-grad-school
           <div class="col-md-6">
             <article class="video-item">
               <div class="video-caption">
-                <h4>Power HTML Template</h4>
+                <h4>Santri Hebat!</h4>
               </div>
               <figure>
-                <a href="assets/images/course-video.mp4" class="play"
-                  ><img src="assets/images/main-thumb.png"
+                <a href="assets/images/thumb-vid0.mp4" class="play"
+                  ><img src="assets/images/thumb-vid.jpeg"
                 /></a>
               </figure>
             </article>
           </div>
         </div>
       </div>
+    </section>
+
+    <section id="gallery">
+      <div class="section-heading">
+        <h2>Gallery Kami</h2>
+      </div>
+      <swiper-container
+        class="mySwiper"
+        pagination="true"
+        effect="coverflow"
+        grab-cursor="true"
+        centered-slides="true"
+        slides-per-view="auto"
+        coverflow-effect-rotate="50"
+        coverflow-effect-stretch="0"
+        coverflow-effect-depth="100"
+        coverflow-effect-modifier="1"
+        coverflow-effect-slide-shadows="true"
+      >
+        <swiper-slide>
+          <img src="assets/images/1.jpeg" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="assets/images/2.jpeg" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="assets/images/3.jpeg" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="assets/images/4.jpeg" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="assets/images/5.jpeg" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="assets/images/6.jpeg" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="assets/images/7.jpeg" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="assets/images/8.jpeg" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="assets/images/9.jpeg" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="assets/images/10.jpeg" />
+        </swiper-slide>
+      </swiper-container>
     </section>
 
     <section class="section contact" data-section="section6">
@@ -570,7 +668,22 @@ https://templatemo.com/tm-557-grad-school
                 	
                     Please visit https://templatemo.com/contact page -->
 
-            <form id="contact" action="" method="post">
+            <form
+              id="contact"
+              action="https://api.web3forms.com/submit"
+              method="POST"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="61ee477a-9033-477d-b969-324e74dd8060"
+              />
+              <input
+                type="checkbox"
+                name="botcheck"
+                class="hidden"
+                style="display: none"
+              />
               <div class="row">
                 <div class="col-md-6">
                   <fieldset>
@@ -633,29 +746,42 @@ https://templatemo.com/tm-557-grad-school
         </div>
       </div>
     </section>
-    <section id="hub">
-      <a href="https://wa.me/08999797393" target="_blank" class="link-icons"
-        ><i class="bi bi-whatsapp icons m-2"></i
-      ></a>
-      <a
-        href="https://www.youtube.com/@syiardu3665/featured"
-        target="_blank"
-        class="link-icons"
-        ><i class="bi bi-youtube icons m-2"></i
-      ></a>
-      <a
-        href="https://www.facebook.com/darul.mauk.5/"
-        target="_blank"
-        class="link-icons"
-        ><i class="bi bi-facebook icons m-2"></i
-      ></a>
-      <a
-        href="https://www.instagram.com/darululum.mauk?igsh=NWkzbzhubnExNnlq"
-        target="_blank"
-        class="link-icons"
-        ><i class="bi bi-instagram icons m-2"></i
-      ></a>
+
+    <section id="sosmed">
+      <div class="section-heading">
+        <h2>Social Media</h2>
+      </div>
+      <section id="hub">
+        <a
+          href="https://wa.me/08999797393"
+          target="_blank"
+          id="whatsapp"
+          class="link-icons"
+          ><i class="bi bi-whatsapp icons m-2" id="wa"></i
+        ></a>
+        <a
+          href="https://www.youtube.com/@syiardu3665/featured"
+          target="_blank"
+          class="link-icons"
+          ><i class="bi bi-youtube icons m-2"></i
+        ></a>
+        <a
+          href="https://www.facebook.com/darul.mauk.5/"
+          target="_blank"
+          class="link-icons"
+          ><i class="bi bi-facebook icons m-2"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/darululum.mauk?igsh=NWkzbzhubnExNnlq"
+          target="_blank"
+          class="link-icons"
+          ><i class="bi bi-instagram icons m-2"></i
+        ></a>
+      </section>
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
     <footer>
       <div class="container">
         <div class="row">
@@ -736,17 +862,16 @@ https://templatemo.com/tm-557-grad-school
       });
     </script>
     <script>
-      const topBtn = document.getElementById("totop");
-      topBtn.addEventListener("click", function () {
-        topFunction();
-      });
+      $(document).on("click", 'a[href^="#"]', function (event) {
+        event.preventDefault();
 
-      function topFunction() {
-        const topBtn = document.getElementById("totop");
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-        document.documentElement.scrollBehavior = "smooth";
-      }
+        $("html, body").animate(
+          {
+            scrollTop: $($.attr(this, "href")).offset().top,
+          },
+          500
+        );
+      });
     </script>
   </body>
 </html>
