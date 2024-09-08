@@ -1,4 +1,4 @@
-html {
+body {
   overflow-x: hidden;
 }
 /* #navhed {
@@ -11,14 +11,16 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
+  z-index: 999;
+}
+
+.nama h2,
+.nama span {
+  font-size: 20px;
 }
 @media (min-width: 951px) {
   .nama {
-    position: absolute;
-    top: 60%;
-    left: 21%;
-    transform: translate(-50%, -50%);
-    width: 100%;
+    display: none;
   }
   .nama h2,
   .nama span {
@@ -27,6 +29,7 @@ html {
 }
 @media (min-width: 1200px) {
   .nama {
+    display: block;
     position: absolute;
     top: 60%;
     left: calc(21% - 80px);
