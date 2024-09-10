@@ -522,7 +522,7 @@ section.why-us {
   font-size: 1.2em;
   letter-spacing: 1px;
   text-align: center;
-  margin: 0;
+  margin: 0 25px;
 }
 #tabs ul li a {
   display: block;
@@ -895,7 +895,6 @@ section.courses .owl-carousel button.active {
 /* Video */
 
 section.video {
-  background-image: url(../images/video-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #172238;

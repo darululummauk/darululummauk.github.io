@@ -21,7 +21,7 @@
     <link
       style="border-radius: 50%"
       rel="icon"
-      href="assets/images/logoDU.jpeg"
+      href="assets/images/logoDU-removebg-preview.png"
     />
     <title>Darul Ulum II</title>
 
@@ -95,9 +95,9 @@ https://templatemo.com/tm-557-grad-school
     <!--header-->
     <header class="main-header clearfix" role="header" id="navhed">
       <div class="logo">
-        <a href="#"
+        <a href="#top"
           ><img
-            src="assets/images/logoDU.jpeg"
+            src="assets/images/logoDU-removebg-preview.png"
             style="border-radius: 50%"
             width="50"
             alt="logo"
@@ -111,13 +111,13 @@ https://templatemo.com/tm-557-grad-school
       <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
       <nav id="menu" class="main-nav" role="navigation">
         <ul class="main-menu">
-          <li><a href="#top" id="firstli">Beranda</a></li>
+          <li><a href="#section1" id="firstli">Beranda</a></li>
           <li>
             <a href="#section2" id="secondli">Tentang Kami</a>
           </li>
-          <li><a href="#section4">Jenjang</a></li>
-          <li><a href="#section3">Pendaftaran</a></li>
-          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#section3">Jenjang</a></li>
+          <li><a href="#section4">Pendaftaran</a></li>
+          <li><a href="#section5">Gallery</a></li>
           <!-- <li><a href="#section5">Video</a></li> -->
           <li><a href="#section6" id="hub">Hubungi Kami</a></li>
         </ul>
@@ -125,7 +125,7 @@ https://templatemo.com/tm-557-grad-school
     </header>
 
     <!-- ***** Main Banner Area Start ***** -->
-    <section class="section main-banner" id="top" data-section="1">
+    <section class="section main-banner" id="top" data-section="section1">
       <video autoplay muted loop id="bg-video">
         <source src="assets/images/vid-head.mp4" type="video/mp4" />
       </video>
@@ -406,7 +406,7 @@ https://templatemo.com/tm-557-grad-school
       </div>
     </section>
 
-    <section class="section courses" data-section="section4">
+    <section class="section courses" data-section="section3">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12">
@@ -507,7 +507,7 @@ https://templatemo.com/tm-557-grad-school
       </div>
     </section>
 
-    <section class="section coming-soon" data-section="section3">
+    <section class="section coming-soon" data-section="section4">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -595,7 +595,7 @@ https://templatemo.com/tm-557-grad-school
       </div>
     </section>
 
-    <section class="section video" data-section="section5">
+    <section class="video">
       <div class="container">
         <div class="row">
           <div class="col-md-6 align-self-center">
@@ -651,7 +651,7 @@ https://templatemo.com/tm-557-grad-school
       </div>
     </section>
 
-    <section id="gallery">
+    <section id="gallery" class="section" data-section="section5">
       <div class="section-heading">
         <h2>Gallery Kami</h2>
       </div>
@@ -844,7 +844,6 @@ https://templatemo.com/tm-557-grad-school
     <!-- Scripts -->
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <script src="assets/js/isotope.min.js"></script>
     <script src="assets/js/owl-carousel.js"></script>
@@ -855,7 +854,7 @@ https://templatemo.com/tm-557-grad-school
     <script src="assets/js/custom.js"></script>
     <script>
       //according to loftblog tut
-      $(".nav li:first").addClass("active");
+      $(".main-menu li:first").addClass("active");
 
       var showSection = function showSection(section, isAnimate) {
         var direction = section.replace(/#/, ""),
