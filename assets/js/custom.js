@@ -66,3 +66,42 @@
 
   $("#tabs").tabs();
 })(jQuery);
+
+// accordion js
+
+// script.js
+
+// Menangkap semua elemen accordion item
+const accordionItems = document.querySelectorAll(".accordion-item");
+
+accordionItems.forEach((item) => {
+  const accImg = item.querySelector(".accordion-image");
+
+  accImg.addEventListener("click", () => {
+    // Toggle class 'active' untuk memperluas atau menutup konten
+    item.classList.toggle("active");
+
+    // Menutup semua item lain jika hanya ingin satu item yang terbuka
+    accordionItems.forEach((otherItem) => {
+      if (otherItem !== item) {
+        otherItem.classList.remove("active");
+      }
+    });
+  });
+});
+
+accordionItems.forEach((item) => {
+  const acc = item.querySelector(".accordion-header");
+
+  acc.addEventListener("click", () => {
+    // Toggle class 'active' untuk memperluas atau menutup konten
+    item.classList.toggle("active");
+
+    // Menutup semua item lain jika hanya ingin satu item yang terbuka
+    accordionItems.forEach((otherItem) => {
+      if (otherItem !== item) {
+        otherItem.classList.remove("active");
+      }
+    });
+  });
+});

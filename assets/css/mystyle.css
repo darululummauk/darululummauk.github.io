@@ -2,6 +2,171 @@ html,
 body {
   overflow-x: hidden;
 }
+
+/* accordion */
+/* styles.css */
+
+/* Reset CSS untuk menghindari margin dan padding yang tidak diinginkan */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  left: -100px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fdfdfd !important;
+  border-radius: 30px;
+}
+::-webkit-scrollbar-thumb {
+  background: #f5a425 !important;
+  border-radius: 30px;
+}
+
+/* Kontainer utama untuk menata elemen-elemen accordion secara horizontal */
+.accordion-container {
+  padding: 29px;
+  display: flex;
+  justify-content: space-evenly;
+  overflow-x: scroll;
+  gap: 20px; /* Jarak antar elemen lebih dekat */
+}
+
+/* Setiap item accordion */
+.accordion-item {
+  min-height: 400px;
+  color: #fff;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  min-width: 80px; /* Lebar default yang lebih kecil saat tidak aktif */
+  height: 200px; /* Tinggi tetap sama untuk setiap item */
+  overflow: hidden;
+  transition: width 1s ease !important; /* Transisi untuk perubahan lebar */
+  transition: min-width 0.5s ease !important; /* Transisi untuk perubahan lebar */
+  margin-right: 5px; /* Mengurangi jarak antar elemen */
+  position: relative;
+}
+
+/* Gambar dalam item accordion */
+.accordion-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+/* Judul elemen accordion */
+.accordion-header {
+  background: transparent !important;
+  padding: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  z-index: 1; /* Agar judul berada di atas gambar */
+  height: 100%;
+  writing-mode: vertical-rl; /* Judul dibaca dari bawah ke atas untuk elemen tidak aktif */
+  transform: rotate(180deg); /* Mengatur teks agar dibaca dari bawah ke atas */
+  transition: transform 1s ease, background-color 1s ease, writing-mode 1s ease;
+}
+.accordion-header h5 {
+  background: #f5a425;
+  stroke: 3px solid #f5a425;
+  border-radius: 30px;
+}
+
+/* Konten yang akan ditampilkan saat item aktif */
+.accordion-content {
+  display: none;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transition: opacity 1s ease;
+}
+
+/* Efek saat item aktif (melebar dan menampilkan konten) */
+.accordion-item.active {
+  min-width: 800px; /* Elemen memperlebar saat aktif */
+  display: flex; /* Mengatur layout gambar dan konten teks secara berdampingan */
+  position: relative;
+  justify-content: flex-start;
+  color: black;
+}
+
+/* Judul saat aktif */
+.accordion-item.active .accordion-header {
+  transform: translateY(-50%) rotate(0deg); /* Pindahkan judul ke atas dan baca dari kiri ke kanan */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    1
+  ); /* Ganti warna latar belakang saat aktif */
+  writing-mode: horizontal-tb; /* Membaca teks dari kiri ke kanan */
+  margin-top: 5%;
+  height: min-content;
+  margin-left: 40%;
+}
+.accordion-item.active .accordion-header h5 {
+  color: black;
+  background: none;
+}
+
+/* Gambar latar belakang untuk item yang aktif akan berada di kiri */
+.accordion-item.active .accordion-image {
+  width: 40%; /* Gambar akan mengisi sebagian elemen */
+  height: 100%; /* Gambar tetap tinggi */
+  object-fit: cover; /* Gambar tetap proporsional */
+}
+
+/* Teks konten akan berada di sebelah kanan gambar */
+.accordion-item.active .accordion-content {
+  display: block; /* Menampilkan konten saat aktif */
+  opacity: 1; /* Menampilkan konten dengan transisi */
+  width: 60%; /* Lebar konten teks */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Konten teks memiliki latar belakang transparan */
+  margin-left: 40%; /* Jarak antara gambar dan konten */
+  margin-top: -500px;
+}
+/* Teks konten akan berada di sebelah kanan gambar */
+.accordion-item.active .accordion-content p {
+  margin-top: -300px !important;
+}
+
+/* Efek saat item tidak aktif (mengecil dan hanya menampilkan judul) */
+.accordion-item:not(.active) .accordion-header {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Menyembunyikan teks yang lebih panjang */
+}
+
+/* Mengatur posisi konten agar muncul di bawah judul */
+.accordion-item:not(.active) .accordion-content {
+  display: none;
+}
+
 /* #navhed {
   display: flex;
   justify-content: space-between;
@@ -85,19 +250,18 @@ ul#fasilitas {
   display: grid;
   grid-template-columns: repeat(auto-fill, 200px);
   gap: 10px;
+  margin-left: 15px;
 }
 ul#program {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 200px);
-  column-gap: 10px;
+  display: block;
 }
 ul#exkul {
   display: grid;
   grid-template-columns: repeat(auto-fill, 200px);
+  margin-left: 15px;
 }
 ul#fasilitas li {
-  color: aliceblue;
-  list-style-type: armenian;
+  color: black;
   text-align: left;
   font-size: 15px;
   margin: 5px;
@@ -105,17 +269,14 @@ ul#fasilitas li {
 }
 
 ul#program li {
-  color: aliceblue;
-  list-style-type: armenian;
+  color: black;
   text-align: left;
-  height: 50px;
   font-size: 15px;
-  margin: 5px;
   position: relative;
+  margin-left: 30px;
 }
 ul#exkul li {
-  color: aliceblue;
-  list-style-type: armenian;
+  color: black;
   text-align: left;
   font-size: 15px;
   margin: 5px;
@@ -125,7 +286,7 @@ ul#fasilitas li::before {
   content: "";
   position: absolute;
   top: 6px;
-  left: -18px;
+  left: -30px;
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -138,7 +299,7 @@ ul#program li::before {
   content: "";
   position: absolute;
   top: 6px;
-  left: -18px;
+  left: -30px;
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -151,7 +312,7 @@ ul#exkul li::before {
   content: "";
   position: absolute;
   top: 6px;
-  left: -18px;
+  left: -30px;
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -205,6 +366,7 @@ nav#menu {
 #vision {
   display: flex;
   flex-direction: column;
+  margin-top: 50px !important;
 }
 .dot-tabs {
   padding: 0 50px;
